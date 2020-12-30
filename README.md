@@ -1,2 +1,2 @@
-# hyperblog
-This is my history in three lines
+# blogpost
+My history counting in three lines
