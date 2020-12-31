@@ -27,7 +27,24 @@
                     git remote -v
                     #Add a remote origin
                     git remote add origin URL_GIT
-                    
+                    #Sicronize local with remote repository
+                    git pull origin master --allow-unrelated-histories
+                    #Upload the local files to remote repository
+                    git push origin master
+
+                    #Tags
+                    #Create a tag git tag -a VERSION -m MENSAJE COMMIT
+                    git tag -a v0.1 -m "Resultado de las primeras pruebas" 06e8ba2
+                    #Show tag link commit
+                    git show-ref --tag
+                    #Last changes remotes
+                    git pull origin master
+                    #Push tags to remote
+                    git push origin --tags
+                    #Delete tag local
+                    git tag -d dormido
+                    #Delete tag NAME_TAG
+                    git push origin :refs/tags/NAME_TAG
 
                 </p>
                 <p>Y este es el parrafo 2 de inicio donde vamos a explicar las cosas increéibles que se pueden hacer con ramas</p>
